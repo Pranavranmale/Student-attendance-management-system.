@@ -1,0 +1,23 @@
+const {Pool} = require('pg');
+
+//Create a new pool instance
+
+const pool = new Pool({
+    user : 'postgres',
+    host : 'localhost',
+    database : 'Stud_Attendance_Management_Systemj',
+    password : 'PR@27',
+    port : 5432,
+    
+});
+
+//Test the connection(This is optional)
+pool.connect((err,client,release)=>{
+    if(err){
+        // console.log(err);
+        return console.error('Error aquiring client', err.stack);
+    }
+
+    //console.log(result.rows);
+});
+module.exports = pool;
