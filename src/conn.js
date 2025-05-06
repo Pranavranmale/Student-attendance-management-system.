@@ -440,6 +440,7 @@ app.put('/upt_stu_data',[
 app.listen(port, () => {
     console.log(`Server starts on http://localhost:${port}`)
 })
+//APIs for admin rejistretion
 
 
 // APIs end Thank You Vikash Sir, Suresh Sir, Ramesh Sir
